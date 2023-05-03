@@ -1,24 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CountApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CustomCountAppBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="z99-X0-ceU">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="・「撃て」の合図が出たら赤いボタンを押せ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elY-KF-bCn">
+                                <rect key="frame" x="23.333333333333343" y="193" width="346.66666666666663" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="居合ゲーム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-hI-MrX">
+                                <rect key="frame" x="125.66666666666669" y="109" width="142" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="・合図が出てからボタンを早く押せた人の勝利" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouX-FQ-xnX">
+                                <rect key="frame" x="14.666666666666657" y="223.33333333333334" width="364" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目指せ居合の達人！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J9-d5-ydW">
+                                <rect key="frame" x="118.66666666666669" y="274.33333333333331" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zla-AO-9LI">
+                                <rect key="frame" x="146.66666666666666" y="401" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IXD-hi-Suf"/>
+                                    <constraint firstAttribute="height" constant="50" id="dZB-je-8hW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sb-s9-h3d">
+                                <rect key="frame" x="136.66666666666666" y="618" width="119.99999999999997" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="CwD-XR-S5g"/>
+                                    <constraint firstAttribute="height" constant="50" id="ney-1h-1Lc"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="撃つ"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shoot" destination="BYZ-38-t0r" eventType="touchUpInside" id="zpv-Y5-QXs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeo-Qx-xAH">
+                                <rect key="frame" x="136.66666666666666" y="481" width="119.99999999999997" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="kTK-as-wDB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-mE-mR7">
+                                <rect key="frame" x="136.66666666666666" y="406" width="119.99999999999997" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Imk-Ec-e7q"/>
+                                    <constraint firstAttribute="height" constant="40" id="Rcp-20-S5M"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="スタート"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="start" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwX-hy-G6P"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Sb-s9-h3d" secondAttribute="bottom" constant="150" id="1v9-iG-byb"/>
+                            <constraint firstItem="0Sb-s9-h3d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7y8-wi-ltn"/>
+                            <constraint firstItem="Cb2-hI-MrX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="84Q-K6-9mO"/>
+                            <constraint firstItem="z99-X0-ceU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AdJ-MI-8md"/>
+                            <constraint firstItem="Tkh-mE-mR7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AlG-gN-cM2"/>
+                            <constraint firstItem="jeo-Qx-xAH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CNN-O2-xFt"/>
+                            <constraint firstItem="elY-KF-bCn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CR8-d4-BmZ"/>
+                            <constraint firstItem="ouX-FQ-xnX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GWf-iA-XXS"/>
+                            <constraint firstItem="Cb2-hI-MrX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="HKj-Iy-WYQ"/>
+                            <constraint firstItem="2J9-d5-ydW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LzY-6E-2Ir"/>
+                            <constraint firstItem="2J9-d5-ydW" firstAttribute="top" secondItem="ouX-FQ-xnX" secondAttribute="bottom" constant="30" id="N99-bJ-SQn"/>
+                            <constraint firstItem="elY-KF-bCn" firstAttribute="top" secondItem="Cb2-hI-MrX" secondAttribute="bottom" constant="50" id="QDL-kr-X5v"/>
+                            <constraint firstItem="Tkh-mE-mR7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XDO-ZP-j2c"/>
+                            <constraint firstItem="Zla-AO-9LI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XYe-Nw-5zv"/>
+                            <constraint firstItem="ouX-FQ-xnX" firstAttribute="top" secondItem="elY-KF-bCn" secondAttribute="bottom" constant="10" id="Y6o-Ja-Bug"/>
+                            <constraint firstItem="jeo-Qx-xAH" firstAttribute="top" secondItem="Zla-AO-9LI" secondAttribute="bottom" constant="30" id="YlW-OG-zNQ"/>
+                            <constraint firstAttribute="bottom" secondItem="z99-X0-ceU" secondAttribute="bottom" id="ZcB-Jx-3TE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z99-X0-ceU" secondAttribute="trailing" id="fGh-oz-oMy"/>
+                            <constraint firstItem="Zla-AO-9LI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fZo-Fl-dwJ"/>
+                            <constraint firstItem="z99-X0-ceU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qzP-gX-KHw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="Zla-AO-9LI" id="pxL-vQ-dq2"/>
+                        <outlet property="resultLabel" destination="jeo-Qx-xAH" id="QuS-eN-rnv"/>
+                        <outlet property="startButton" destination="Tkh-mE-mR7" id="1hr-Pr-qk7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CustomCountAppBackgroundImage" width="736" height="1308"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -16,6 +16,7 @@
 		8951430A2A00B8D70078564A /* CountAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895143092A00B8D70078564A /* CountAppTests.swift */; };
 		895143142A00B8D70078564A /* CountAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895143132A00B8D70078564A /* CountAppUITests.swift */; };
 		895143162A00B8D70078564A /* CountAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895143152A00B8D70078564A /* CountAppUITestsLaunchTests.swift */; };
+		895143232A00E1A40078564A /* CountTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895143222A00E1A40078564A /* CountTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8951430F2A00B8D70078564A /* CountAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		895143132A00B8D70078564A /* CountAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountAppUITests.swift; sourceTree = "<group>"; };
 		895143152A00B8D70078564A /* CountAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		895143222A00E1A40078564A /* CountTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				895142FB2A00B8D70078564A /* Assets.xcassets */,
 				895142FD2A00B8D70078564A /* LaunchScreen.storyboard */,
 				895143002A00B8D70078564A /* Info.plist */,
+				895143222A00E1A40078564A /* CountTimer.swift */,
 			);
 			path = CountApp;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				895142F72A00B8D70078564A /* ViewController.swift in Sources */,
 				895142F32A00B8D70078564A /* AppDelegate.swift in Sources */,
 				895142F52A00B8D70078564A /* SceneDelegate.swift in Sources */,
+				895143232A00E1A40078564A /* CountTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
